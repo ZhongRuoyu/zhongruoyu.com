@@ -6,7 +6,10 @@
 
         {%- if page.author -%}
         
-          {%- assign author_count = page.author | size -%}
+          {%- assign author_count = 0 -%}
+          {%- for author in page.author -%}
+            {%- assign author_count = author_count | plus: 1 -%}
+          {%- endfor -%}
           {%- assign author_counter = 1 -%}
 
           {%- for author in page.author -%}
