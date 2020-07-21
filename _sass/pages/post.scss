@@ -1,3 +1,15 @@
 article.post > div.post-content .footnotes {
     margin-top: 5em;
 }
+
+article.post > div.post-content a {
+    text-decoration: underline;
+}
+article.post > div.post-content a.footnote,
+article.post > div.post-content a.reversefootnote {
+    text-decoration: none;
+}
+
+article.post span.spacing-seperator {
+    padding: 0 0.5em;
+}

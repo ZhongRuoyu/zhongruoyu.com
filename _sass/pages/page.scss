@@ -1,4 +1,5 @@
-main.page-content > p, a {
+main.page-content p,
+main.page-content a {
     font-size: $font-normal;
 }
 
@@ -7,4 +8,8 @@ main.page-content > p, a {
     .noprint * {
         display: none;
     }
+}
+
+main.page-content a.footnote {
+    font-size: $font-small;
 }
