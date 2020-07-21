@@ -6,16 +6,16 @@ h1 {
     font-size: 2em;
 }
 h2 {
-    font-size: 1.8em;
-}
-h3 {
     font-size: 1.6em;
 }
-h4 {
+h3 {
     font-size: 1.4em;
 }
-h5 {
+h4 {
     font-size: 1.2em;
+}
+h5 {
+    font-size: 1.1em;
 }
 h6 {
     font-size: 1em;
@@ -48,4 +48,18 @@ a.forward::after {
 
 code {
     font-family: $monospace;
+}
+
+pre {
+    display: block;
+    font-family: $monospace;
+    margin: 1em 0;
+}
+
+ul, ol {
+    line-height: 1.5em;
+    padding-left: $indentation-unit;
+}
+ul > li, ol > li {
+    padding: 0.3em 0;
 }

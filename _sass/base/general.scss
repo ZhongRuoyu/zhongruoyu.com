@@ -1,5 +1,13 @@
 body {
-    font-family: $sans;
-    color: $beta;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    max-width: 960px;
     min-width: 360px;
+    min-height: 100vh;
+    padding: 0 5%;
+    font-family: $sans;
+    overflow-wrap: break-word;
+    color: $beta;
 }
