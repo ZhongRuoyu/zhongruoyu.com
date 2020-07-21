@@ -1,0 +1,39 @@
+{%- if page.hide_info != true -%}
+  <div class="post-info">
+
+    {%- if page.author or page.date -%}
+      <p class="post-author-date">
+
+        {%- if page.author -%}
+        
+          {%- assign author_count = page.author | size -%}
+          {%- assign author_counter = 1 -%}
+
+          {%- for author in page.author -%}
+
+            {{ author }}
+
+            {%- if author_counter < author_count -%}
+              <span class="seperator"> | </span>
+              {%- assign author_counter = author_counter | plus: 1 -%}
+            {%- endif -%}
+
+          {%- endfor -%}
+
+        {%- endif -%}
+
+        {%- if page.author and page.date -%}
+          <br>
+        {%- endif -%}
+
+        {%- if page.date -%}
+          <time datetime="{{ page.date | date: "%Y-%m-%d %I:%M" }}">
+            Published {{ page.date | date: "%-d %B %Y" }}
+          </time>
+        {%- endif -%}
+
+      </p>
+    {%- endif -%}
+
+  </div>
+{%- endif -%}
