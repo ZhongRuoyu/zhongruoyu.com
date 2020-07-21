@@ -24,11 +24,8 @@ h6 {
 p {
     color: $beta;
     line-height: 2em;
-}
-
-strong {
-    font-weight: bold;
-    color: $alpha;
+    display: block;
+    margin: 1em auto;
 }
 
 a {
@@ -46,14 +43,13 @@ a.forward::after {
     content: "\00a0>";
 }
 
-code {
-    font-family: $monospace;
+strong {
+    font-weight: bold;
+    color: $alpha;
 }
-
-pre {
-    display: block;
-    font-family: $monospace;
-    margin: 1em 0;
+em,
+i {
+    font-style: italic;
 }
 
 ul, ol {
@@ -63,4 +59,40 @@ ul, ol {
 ul > li,
 ol > li {
     padding: 0.3em 0;
+}
+
+blockquote,
+pre {
+    display: block;
+    margin: 1em auto;
+    padding: 0 2em;
+}
+pre,
+code {
+    font-family: $monospace;
+}
+pre {
+    overflow-x: auto;
+}
+
+table {
+    margin: 1em 2em;
+    border-collapse: collapse;
+    border: 1px solid $gamma;
+    text-align: left;
+}
+table thead {
+    vertical-align: middle;
+}
+table th,
+table td {
+    padding: 1em 1.5em;
+}
+table th {
+    color: $alpha;
+    background-color: $epsilon;
+    border: 1px solid $gamma;
+}
+table td {
+    border: 1px solid $delta;
 }
