@@ -1,6 +1,7 @@
 h1, h2, h3, h4, h5, h6 {
     color: $alpha;
     font-weight: bold;
+    margin: 1em auto;
 }
 h1 {
     font-size: 2em;
@@ -76,7 +77,8 @@ pre {
 }
 
 table {
-    margin: 1em 2em;
+    margin: 1em auto;
+    width: 90%;
     border-collapse: collapse;
     border: 1px solid $gamma;
     text-align: left;
