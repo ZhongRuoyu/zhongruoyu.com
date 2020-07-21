@@ -2,7 +2,7 @@ nav.navigation {
     position: absolute;
     left: 0;
     top: 0;
-    font-size: 0.8rem;
+    font-size: $font-small;
     margin: 1rem;
 }
 nav.navigation ul.navigation-list {
@@ -14,6 +14,6 @@ nav.navigation ul.navigation-list > li.navigation-list-item {
 }
 nav.navigation a.navigation-link {
     padding: 1rem;
-    font-size: 0.8rem;
+    font-size: $font-small;
     vertical-align: middle;
 }
