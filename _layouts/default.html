@@ -1,0 +1,38 @@
+---
+layout: compress
+---
+{%- assign title = page.title | split: " " | join: "-" | downcase -%}
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body {% if page.centre == true %}class="centre"{% endif %}>
+
+    {%- include navigation.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper {{ title }}">
+        {%- if page.centre == true -%}
+          <div class="centre-container">
+            <div class="centre">
+        {%- endif -%}
+
+        {%- if page.layout != "post" -%}
+          {%- include header.html -%}
+        {%- endif -%}
+
+        {{ content }}
+
+        {%- include footer.html -%}
+        
+        {%- if page.centre == true -%}
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+    </main>
+
+  </body>
+
+</html>

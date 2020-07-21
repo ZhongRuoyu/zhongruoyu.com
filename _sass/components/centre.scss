@@ -1,0 +1,15 @@
+body.centre {
+    margin: 0;
+}
+
+div.centre-container {
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    display: table;
+}
+div.centre {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}

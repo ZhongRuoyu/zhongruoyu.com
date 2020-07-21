@@ -1,0 +1,28 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import
+  "base/fonts.scss",
+  "variables.scss";
+
+@import
+  "base/general.scss",
+  "base/media.scss",
+  "base/miscellaneous.scss",
+  "base/syntax.scss",
+  "base/text.scss";
+
+@import
+  "components/centre.scss",
+  "components/containers.scss",
+  "components/footer.scss",
+  "components/header.scss",
+  "components/navigation.scss";
+
+@import
+  "pages/404.scss",
+  "pages/about.scss",
+  "pages/page.scss";
+
+
