@@ -17,9 +17,10 @@ main.page-content header.page-header img.header-image {
 
 main.page-content header.post-header {
     text-align: left !important;
+    margin: 3em auto;
 }
 
 main.page-content header.post-header p.post-author-date {
-    margin: 1em 0 3em;
+    margin: 1em auto;
     color: $gamma;
 }
