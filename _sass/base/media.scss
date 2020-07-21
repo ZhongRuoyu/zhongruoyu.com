@@ -2,4 +2,19 @@ img {
     display: block;
     width: 80%;
     margin: auto;
+    vertical-align: middle;
+}
+
+figure {
+    display: block;
+    margin: 1em auto;
+    text-align: center;
+}
+figure img {
+    display: block;
+    margin: auto;
+}
+figcaption {
+    font-size: $font-small;
+    margin: 1em auto;
 }
