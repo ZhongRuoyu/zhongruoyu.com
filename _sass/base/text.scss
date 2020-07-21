@@ -60,6 +60,7 @@ ul, ol {
     line-height: 1.5em;
     padding-left: $indentation-unit;
 }
-ul > li, ol > li {
+ul > li,
+ol > li {
     padding: 0.3em 0;
 }

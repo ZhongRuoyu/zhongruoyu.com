@@ -1,3 +1,5 @@
+/* layout: default */
+
 main.page-content header.page-header {
     text-align: center;
 }
@@ -9,6 +11,9 @@ main.page-content header.page-header div.title {
 main.page-content header.page-header img.header-image {
     width: 80%;
 }
+
+
+/* layout: post */
 
 main.page-content header.post-header {
     text-align: left !important;
