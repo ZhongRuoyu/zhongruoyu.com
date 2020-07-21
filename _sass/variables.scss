@@ -12,3 +12,9 @@ $epsilon: #e6e6e6; // For backgrounds, etc.
 $indentation-unit: 2rem;
 $font-normal: 1rem;
 $font-small: 0.8*$font-normal;
+
+$above: "screen and (min-width: 768px)";
+$tablet-and-above: "screen and (min-width: 425px)";
+$tablet: "screen and (min-width: 425px) and (max-width: 768px)";
+$tablet-and-below: "screen and (max-width: 768px)";
+$mobile: "screen and (max-width: 425px)";
