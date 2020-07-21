@@ -9,7 +9,6 @@
 @import
   "base/general.scss",
   "base/media.scss",
-  "base/miscellaneous.scss",
   "base/syntax.scss",
   "base/text.scss";
 
@@ -20,7 +19,6 @@
   "components/navigation.scss";
 
 @import
-  "pages/404.scss",
-  "pages/about.scss",
+  "pages/core.scss",
   "pages/page.scss",
   "pages/post.scss";
