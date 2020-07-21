@@ -7,7 +7,7 @@ baseurl: "" # the subpath of the site, e.g. /blog
 lang: en-SG
 google_analytics: UA-167948296-2
 
-permalink: /:category/:year-:month/:title/
+permalink: /:categories/:year-:month/:title/
 
 defaults:
   -
