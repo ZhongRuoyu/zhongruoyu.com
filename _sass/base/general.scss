@@ -11,3 +11,8 @@ body {
     overflow-wrap: break-word;
     color: $beta;
 }
+
+// narrow_content
+body.narrow {
+    max-width: 512px;
+}

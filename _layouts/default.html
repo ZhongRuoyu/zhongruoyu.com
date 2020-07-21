@@ -17,17 +17,19 @@ layout: compress
 
   {%- include head.html -%}
 
-  <body {% if page.centre_content == true %} class="centre"{% endif %}>
+  <body class="{{ centre }} {{ narrow }}">
 
     {%- include navigation.html -%}
 
     <main class="page-content {{ centre }} {{ narrow }}" aria-label="Content">
       <div class="wrapper {{ centre }} {{ title }}">
+
         {%- if page.layout != "post" -%}
           {%- include header.html -%}
         {%- endif -%}
 
         {{ content }}
+        
       </div>
     </main>
 
