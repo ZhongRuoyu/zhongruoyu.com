@@ -1,8 +1,9 @@
-{%- if page.title != "Home"
-    and page.hidenavigation != true -%}
-  <nav>
-    <ul>
-      <li><a href="/">Home</a></li>
+{%- if page.hide_navigation != true -%}
+  <nav class="navigation">
+    <ul class="navigation-list">
+      <li class="navigation-list-item">
+        <a class="navigation-link" href="/">Home</a>
+      </li>
     </ul>
   </nav>
 {%- endif -%}

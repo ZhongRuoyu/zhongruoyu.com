@@ -2,36 +2,36 @@
 layout: compress
 ---
 {%- assign title = page.title | split: " " | join: "-" | downcase -%}
+{%- if page.centre_content == true -%}
+  {%- assign centre = "centre" -%}
+{%- else -%}
+  {%- assign centre = "" -%}
+{%- endif -%}
+{%- if page.narrow_content == true -%}
+  {%- assign narrow = "narrow" -%}
+{%- else -%}
+  {%- assign narrow = "" -%}
+{%- endif -%}
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {%- include head.html -%}
 
-  <body {% if page.centre == true %}class="centre"{% endif %}>
+  <body {% if page.centre_content == true %} class="centre"{% endif %}>
 
     {%- include navigation.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper {{ title }}">
-        {%- if page.centre == true -%}
-          <div class="centre-container">
-            <div class="centre">
-        {%- endif -%}
-
+    <main class="page-content {{ centre }} {{ narrow }}" aria-label="Content">
+      <div class="wrapper {{ centre }} {{ title }}">
         {%- if page.layout != "post" -%}
           {%- include header.html -%}
         {%- endif -%}
 
         {{ content }}
-
-        {%- include footer.html -%}
-        
-        {%- if page.centre == true -%}
-            </div>
-          </div>
-        {%- endif -%}
       </div>
     </main>
+
+    {%- include footer.html -%}
 
   </body>
 

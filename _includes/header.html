@@ -1,11 +1,20 @@
-<header>
-  {%- if page.headerimage -%}
-    <img class="header-image" src="{{ page.headerimage }}" alt="{{ page.title }}">
+{%- if page.layout == "post" -%}
+  {%- assign post_title = page.title | split: " " | join: "-" | downcase -%}
+  {%- assign post_header = "post-header" -%}
+  {%- assign post_title = "post-title" -%}
+{%- else -%}
+  {%- assign post_title = "" -%}
+  {%- assign post_header = "" -%}
+  {%- assign post_title = "" -%}
+{%- endif -%}
+
+<header class="page-header {{ post_header }}">
+  {%- if page.header_image -%}
+    <img class="header-image" src="{{ page.header_image }}" alt="{{ page.title }}">
   {%- endif -%}
 
-  {%- if page.title != ""
-      and page.hidetitle != true -%}
-    <div class="title">
+  {%- if page.hide_title != true -%}
+    <div class="title {{ post_title }}">
       <h1>{{ page.title }}</h1>
     </div>
   {%- endif -%}
