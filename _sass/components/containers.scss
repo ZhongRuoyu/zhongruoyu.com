@@ -1,11 +1,25 @@
-main.page-content {
+body > main.page-content {
     font-size: 1rem;
-    width: 90%;
-    max-width: 512px;
-    margin: 0 auto;
+    min-width: 90%;
+    padding: 0 5%;
     padding-top: 3rem;
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+main.page-content.narrow {
+    max-width: 512px;
 }
 
-div.wrapper {
-    // Placeholder
+body.centre {
+    margin: 0 auto;
+}
+body.centre > main.page-content.centre {
+    padding-top: 0;
+    height: 84vh;
+    display: table;
+}
+body.centre > main.page-content.centre > div.wrapper.centre {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
