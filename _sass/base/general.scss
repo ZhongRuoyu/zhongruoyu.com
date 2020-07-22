@@ -4,12 +4,17 @@ body {
     margin: auto;
     width: 90%;
     max-width: 960px;
-    min-width: 360px;
+    min-width: $min-width;
     min-height: 100vh;
     font-family: $sans;
     font-size: $font-normal;
     overflow-wrap: break-word;
     color: $beta;
+}
+@media #{$tablet-and-below} {
+    body {
+        min-height: $min-height-mobile;
+    }
 }
 
 // narrow_content
