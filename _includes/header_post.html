@@ -1,32 +1,43 @@
-{%- if page.hide_info != true -%}
+{%- if site.hide_info != true and page.hide_info != true -%}
+  {%- assign show_info = true -%}
+{%- else -%}
+  {%- assign show_info = false -%}
+{%- endif -%}
+{%- if site.hide_author != true and page.hide_author != true and page.author -%}
+  {%- assign show_author = true -%}
+{%- else -%}
+  {%- assign show_author = false -%}
+{%- endif -%}
+{%- if site.hide_date != true and page.hide_date != true and page.date -%}
+  {%- assign show_date = true -%}
+{%- else -%}
+  {%- assign show_date = false -%}
+{%- endif -%}
+
+{%- if show_info -%}
   <div class="post-info">
 
-    {%- if page.author or page.date -%}
-      {%- if page.hide_author != true
-          or page.hide_date != true -%}
-        <div class="post-author-date">
+    {%- if show_author or show_date -%}
+      <div class="post-author-date">
 
-          {%- if page.author
-              and page.hide_author != true -%}
-            <div class="post-authors">
-              {%- for author in page.author -%}
-                <span class="post-author">{{ author }}</span>
-              {%- endfor -%}
-            </div>
-          {%- endif -%}
-
-          {%- if page.date
-              and page.hide_date != true -%}
-            <div class="post-time">
-              Published
-              <time datetime="{{ page.date | date_to_xmlschema }}">
-                {{ page.date | date: "%-d %B %Y" }}
-              </time>
-            </div>
-          {%- endif -%}
-
+        {%- if show_author -%}
+          <div class="post-authors">
+            {%- for author in page.author -%}
+              <span class="post-author">{{ author }}</span>
+            {%- endfor -%}
           </div>
-      {%- endif -%}
+        {%- endif -%}
+
+        {%- if show_date -%}
+          <div class="post-time">
+            Published
+            <time datetime="{{ page.date | date_to_xmlschema }}">
+              {{ page.date | date: "%-d %B %Y" }}
+            </time>
+          </div>
+        {%- endif -%}
+
+      </div>
     {%- endif -%}
 
   </div>
