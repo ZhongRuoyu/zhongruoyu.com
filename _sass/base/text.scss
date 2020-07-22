@@ -62,21 +62,28 @@ ol > li {
     padding: 0.3em 0;
 }
 
-blockquote,
+blockquote {
+    display: block;
+    margin: 1em auto;
+    border-left: 4px solid $epsilon;
+    padding: 0 2em;
+}
 pre {
     display: block;
     margin: 1em auto;
     padding: 0 2em;
-}
-pre,
-code {
-    font-family: $monospace;
-}
-pre {
     overflow-x: auto;
     border-radius: $border-radius;
+    font-family: $monospace;
+    background-color: $epsilon;
 }
+pre.highlight {
+    padding: 1em;
+}
+code {
+    font-family: $monospace;
 
+}
 table {
     // display: block;
     overflow-x: auto;
