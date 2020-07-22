@@ -69,17 +69,17 @@ blockquote {
     padding: 0 2em;
     font-family: $serif;
 }
+figure.highlight {
+    text-align: left;
+}
 pre {
     display: block;
     margin: 1em auto;
-    padding: 0 2em;
+    padding: 1em;
     overflow-x: auto;
     border-radius: $border-radius;
     font-family: $monospace;
     background-color: $epsilon;
-}
-pre.highlight {
-    padding: 1em;
 }
 code {
     font-family: $monospace;
@@ -119,6 +119,6 @@ table td {
 @media #{$mobile} {
     table th,
     table td {
-        padding: 0.3em;
+        padding: 0.4em;
     }
 }
