@@ -8,7 +8,7 @@
 
 {%- if page.hide_navigation != true
     and site.categories -%}
-  <nav class="navigation {{ home }} noprint">
+  <nav class="navigation {{ home }}">
     <ul class="navigation-list">
       <li class="navigation-list-item navigation-list-item-home">
         <a class="navigation-link navigation-link-home" href="/">
@@ -36,6 +36,9 @@
             href="{{ category.path }}">{{ category.name }}</a>
         </li>
       {%- endfor -%}
+      <li class="navigation-list-item">
+        <a class="navigation-link forward" href="/">Home</a>
+      </li>
     </ul>
   </nav>
 {%- endif -%}
