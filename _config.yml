@@ -1,10 +1,30 @@
 title: Zhong Ruoyu
+tagline: Zhong Ruoyu's personal site.
 description: >-
-  zhongruoyu.com
-url: "https://zhongruoyu.com"
+  Zhong Ruoyu's personal site.
+url: https://zhongruoyu.com
 baseurl: "" # the subpath of the site, e.g. /blog
-
 lang: en-SG
+logo: /assets/images/logo/logo.png
+
+author: Zhong Ruoyu
+
+twitter:
+  username: ZhongRuoyu
+  card: summary
+facebook:
+  publisher: https://www.facebook.com/ciel.ruoyu
+social:
+  name: Zhong Ruoyu
+  links:
+    - https://twitter.com/ZhongRuoyu
+    - https://www.facebook.com/ciel.ruoyu
+    - https://www.instagram.com/cielchung/
+    - https://github.com/ZhongRuoyu
+
+# webmaster_verifications:
+#   google: 
+#   bing: 
 google_analytics: UA-167948296-2
 
 permalink: /:categories/:year-:month/:title/
@@ -14,7 +34,8 @@ defaults:
     scope:
       path: "" # an empty string here means all files in the project
     values:
-      layout: "default"
+      layout: default
+      image: /assets/images/default-card.png
 
 sass:
   style: compressed
