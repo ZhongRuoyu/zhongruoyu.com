@@ -3,13 +3,6 @@ main.page-content a {
     font-size: $font-normal;
 }
 
-@media print {
-    .noprint,
-    .noprint * {
-        display: none;
-    }
-}
-
 main.page-content a.footnote {
     font-size: $font-small;
 }

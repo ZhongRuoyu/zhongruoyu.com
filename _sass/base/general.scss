@@ -17,6 +17,19 @@ body {
         min-height: $min-height-tablet-and-below;
     }
 }
+@media print {
+    body {
+        display: initial;
+    }
+}
+
+@media print {
+    .noprint,
+    .noprint * {
+        display: none;
+    }
+}
+
 // narrow_content
 body.narrow {
     max-width: 512px;
