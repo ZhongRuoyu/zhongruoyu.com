@@ -10,6 +10,14 @@ logo: /assets/images/logo/logo.png
 author: Zhong Ruoyu
 
 # post settings
+navigation_categories:
+  -
+    name: Blog
+    path: /blog/
+  -
+    name: Test
+    path: /test/
+
 hide_info: false
 hide_author: false
 hide_date: false
@@ -17,7 +25,7 @@ hide_tags: false
 
 twitter:
   username: ZhongRuoyu
-  card: summary
+  card: summary_large_image
 facebook:
   publisher: https://www.facebook.com/ciel.ruoyu
 social:
@@ -28,9 +36,8 @@ social:
     - https://www.instagram.com/cielchung/
     - https://github.com/ZhongRuoyu
 
-# webmaster_verifications:
-#   google: 
-#   bing: 
+webmaster_verifications:
+  google: hlTIiR9rfHXM32EDBGwiahnpyejtp4Cc_UQD1E8JfNI
 google_analytics: UA-167948296-2
 
 permalink: /:categories/:year-:month/:title/
