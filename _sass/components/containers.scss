@@ -12,10 +12,11 @@ body > main.page-content {
 // centre_content
 body.centre {
     margin: 0 auto;
+    min-height: 84vh !important;
 }
 body.centre > main.page-content.centre {
     padding-top: 0;
-    height: 90vh;
+    min-height: 84vh;
     display: table;
     margin: auto;
 }
