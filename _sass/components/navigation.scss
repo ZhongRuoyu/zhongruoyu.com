@@ -4,6 +4,7 @@ nav.navigation {
     top: 0;
     font-size: $font-small;
     margin: 1rem;
+    user-select: none;
 }
 nav.navigation ul.navigation-list {
     padding: 0;
