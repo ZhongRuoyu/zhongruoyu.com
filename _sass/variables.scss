@@ -15,11 +15,15 @@ $font-small: 0.8*$font-normal;
 
 $border-radius: 4px;
 $min-width: 360px;
-$min-height-mobile: 75vh;
 
-$above: "screen and (min-width: 768px)";
+$viewport-height-split-alpha: 90vh;
+$viewport-height-split-beta: 10vh;
+$min-height-tablet-and-below: 80vh;
+$mobile-viewport-height-split-alpha: 70vh;
+
+$above: "screen and (min-width: 1280px)";
 $tablet-and-above: "screen and (min-width: 425px)";
-$tablet: "screen and (min-width: 425px) and (max-width: 768px)";
-$tablet-and-below: "screen and (max-width: 768px)";
+$tablet: "screen and (min-width: 425px) and (max-width: 1280px)";
+$tablet-and-below: "screen and (max-width: 1280px)";
 $mobile: "screen and (max-width: 425px)";
 $mobile-smaller: "screen and (max-width: 384px)";
