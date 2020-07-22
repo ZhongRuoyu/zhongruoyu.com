@@ -67,6 +67,7 @@ blockquote {
     margin: 1em auto;
     border-left: 4px solid $epsilon;
     padding: 0 2em;
+    font-family: $serif;
 }
 pre {
     display: block;
@@ -88,7 +89,8 @@ table {
     // display: block;
     overflow-x: auto;
     margin: 1em auto;
-    width: 90%;
+    width: auto;
+    max-width: 90%;
     border-collapse: collapse;
     border: 1px solid $gamma;
     text-align: left;
@@ -115,11 +117,8 @@ table td {
     }
 }
 @media #{$mobile} {
-    table {
-        width: 100%;
-    }
     table th,
     table td {
-        padding: 0.5em;
+        padding: 0.3em;
     }
 }
