@@ -2,41 +2,49 @@
   <div class="post-info">
 
     {%- if page.author or page.date -%}
-      <p class="post-author-date">
+      {%- if page.hide_author != true
+          or page.hide_date != true -%}
+        <p class="post-author-date">
 
-        {%- if page.author -%}
-        
-          {%- assign author_count = 0 -%}
-          {%- for author in page.author -%}
-            {%- assign author_count = author_count | plus: 1 -%}
-          {%- endfor -%}
-          {%- assign author_counter = 1 -%}
+          {%- if page.author
+              and page.hide_author != true -%}
+          
+            {%- assign author_count = 0 -%}
+            {%- for author in page.author -%}
+              {%- assign author_count = author_count | plus: 1 -%}
+            {%- endfor -%}
+            {%- assign author_counter = 1 -%}
 
-          {%- for author in page.author -%}
+            {%- for author in page.author -%}
 
-            {{ author }}
+              {{ author }}
 
-            {%- if author_counter < author_count -%}
-              <span class="seperator"> | </span>
-              {%- assign author_counter = author_counter | plus: 1 -%}
-            {%- endif -%}
+              {%- if author_counter < author_count -%}
+                <span class="seperator"> | </span>
+                {%- assign author_counter = author_counter | plus: 1 -%}
+              {%- endif -%}
 
-          {%- endfor -%}
+            {%- endfor -%}
 
-        {%- endif -%}
+          {%- endif -%}
 
-        {%- if page.author and page.date -%}
-          <br>
-        {%- endif -%}
+          {%- if page.author
+              and page.hide_author != true
+              and page.date
+              and page.hide_date != true -%}
+            <br>
+          {%- endif -%}
 
-        {%- if page.date -%}
-          Published
-          <time datetime="{{ page.date | date: "%Y-%m-%d %I:%M" }}">
-             {{ page.date | date: "%-d %B %Y" }}
-          </time>
-        {%- endif -%}
+          {%- if page.date
+              and page.hide_date != true -%}
+            Published
+            <time datetime="{{ page.date | date: "%Y-%m-%d %I:%M" }}">
+              {{ page.date | date: "%-d %B %Y" }}
+            </time>
+          {%- endif -%}
 
-      </p>
+        </p>
+      {%- endif -%}
     {%- endif -%}
 
   </div>
