@@ -9,6 +9,12 @@ logo: /assets/images/logo/logo.png
 
 author: Zhong Ruoyu
 
+# post settings
+hide_info: false
+hide_author: false
+hide_date: false
+hide_tags: false
+
 twitter:
   username: ZhongRuoyu
   card: summary
