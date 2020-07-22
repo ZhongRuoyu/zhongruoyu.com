@@ -11,12 +11,12 @@ author: Zhong Ruoyu
 
 # post settings
 navigation_categories:
+#  -
+#    name: Blog
+#    path: /blog/
   -
-    name: Blog
-    path: /blog/
-  -
-    name: Test
-    path: /test/
+    name: About
+    path: /about/
 
 hide_info: false
 hide_author: false
