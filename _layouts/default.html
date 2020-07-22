@@ -12,6 +12,7 @@ layout: compress
 {%- else -%}
   {%- assign narrow = "" -%}
 {%- endif -%}
+
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
@@ -19,7 +20,9 @@ layout: compress
 
   <body class="{{ centre }} {{ narrow }}">
 
-    {%- include navigation.html -%}
+    {%- if page.home != true -%}
+      {%- include navigation.html -%}
+    {%- endif -%}
 
     <main class="page-content {{ centre }} {{ narrow }}" aria-label="Content">
       <div class="wrapper {{ centre }} {{ title }}">
@@ -29,7 +32,11 @@ layout: compress
         {%- endif -%}
 
         {{ content }}
-        
+
+        {%- if page.home == true -%}
+          {%- include navigation.html -%}
+        {%- endif -%}
+
       </div>
     </main>
 

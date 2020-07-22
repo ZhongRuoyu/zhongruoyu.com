@@ -1,7 +1,42 @@
-{%- if page.hide_navigation != true -%}
-  <nav class="navigation noprint">
+{%- if page.home == true -%}
+  {%- assign home = "navigation-home" -%}
+  {%- assign forward = "forward" -%}
+{%- else -%}
+  {%- assign home = "" -%}
+  {%- assign forward = "" -%}
+{%- endif -%}
+
+{%- if page.hide_navigation != true
+    and site.categories -%}
+  <nav class="navigation {{ home }} noprint">
     <ul class="navigation-list">
-      <li class="navigation-list-item">
+      <li class="navigation-list-item navigation-list-item-home">
+        <a class="navigation-link navigation-link-home" href="/">
+          <img class="navigation-link-home-logo" src="/assets/images/logo/logo.png" alt="Site Logo">
+        </a>
+      </li>
+      {%- for category in site.navigation_categories -%}
+        {%- if category.name == page.categories -%}
+          {%- assign li_current_category = "navigation-list-item-current-category" -%}
+          {%- assign a_current_category = "navigation-link-current-category" -%}
+        {%- else -%}
+          {%- assign li_current_category = "" -%}
+          {%- assign a_current_category = "" -%}
+        {%- endif -%}
+        {%- if category.path == page.dir -%}
+          {%- assign forward = "" -%}
+          {%- assign li_current_page = "navigation-list-item-current-page" -%}
+          {%- assign a_current_page = "navigation-link-current-page" -%}
+        {%- else -%}
+          {%- assign li_current_page = "" -%}
+          {%- assign a_current_page = "" -%}
+        {%- endif -%}
+        <li class="navigation-list-item {{ li_current_category }} {{ li_current_page }}">
+          <a class="navigation-link {{ forward }} {{ a_current_category }} {{ a_current_page }}"
+            href="{{ category.path }}">{{ category.name }}</a>
+        </li>
+      {%- endfor -%}
+      <li class="navigation-list-item navigation-list-item-home">
         <a class="navigation-link" href="/">Home</a>
       </li>
     </ul>
