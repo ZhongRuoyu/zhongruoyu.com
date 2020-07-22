@@ -32,13 +32,14 @@
           {%- assign a_current_page = "" -%}
         {%- endif -%}
         <li class="navigation-list-item {{ li_current_category }} {{ li_current_page }}">
-          <a class="navigation-link {{ forward }} {{ a_current_category }} {{ a_current_page }}"
-            href="{{ category.path }}">{{ category.name }}</a>
+          {%- if category.path == page.dir -%}
+            <span class="navigation-link navigation-current-page">{{ category.name }}</span>
+          {%- else -%}
+            <a class="navigation-link {{ forward }} {{ a_current_category }} {{ a_current_page }}"
+              href="{{ category.path }}">{{ category.name }}</a>
+          {%- endif -%}
         </li>
       {%- endfor -%}
-      <li class="navigation-list-item">
-        <a class="navigation-link forward" href="/">Home</a>
-      </li>
     </ul>
   </nav>
 {%- endif -%}
