@@ -1,9 +1,14 @@
 footer.page-footer {
     border-top: 1px solid $delta;
+    box-sizing: border-box;
     width: 90%;
+    min-height: $viewport-height-split-beta;
     margin: 3rem auto 0;
-    padding: 2rem 0;
+    padding: 1rem;
     text-align: center;
     font-size: $font-small;
     color: $gamma;
+}
+footer.page-footer.page-centre-footer {
+    margin-top: 0;
 }

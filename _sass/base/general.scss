@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
+    box-sizing: border-box;
     width: 90%;
     max-width: 960px;
     min-width: $min-width;
@@ -13,10 +14,9 @@ body {
 }
 @media #{$tablet-and-below} {
     body {
-        min-height: $min-height-mobile;
+        min-height: $min-height-tablet-and-below;
     }
 }
-
 // narrow_content
 body.narrow {
     max-width: 512px;
