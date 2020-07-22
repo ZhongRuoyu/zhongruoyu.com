@@ -1,7 +1,7 @@
 ---
 layout: compress
 ---
-{%- assign title = page.title | split: " " | join: "-" | downcase -%}
+{%- assign title = page.title | slugify -%}
 {%- if page.centre_content == true -%}
   {%- assign centre = "centre" -%}
 {%- else -%}

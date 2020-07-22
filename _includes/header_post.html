@@ -4,46 +4,28 @@
     {%- if page.author or page.date -%}
       {%- if page.hide_author != true
           or page.hide_date != true -%}
-        <p class="post-author-date">
+        <div class="post-author-date">
 
           {%- if page.author
               and page.hide_author != true -%}
-          
-            {%- assign author_count = 0 -%}
-            {%- for author in page.author -%}
-              {%- assign author_count = author_count | plus: 1 -%}
-            {%- endfor -%}
-            {%- assign author_counter = 1 -%}
-
-            {%- for author in page.author -%}
-
-              {{ author }}
-
-              {%- if author_counter < author_count -%}
-                <span class="seperator"> | </span>
-                {%- assign author_counter = author_counter | plus: 1 -%}
-              {%- endif -%}
-
-            {%- endfor -%}
-
-          {%- endif -%}
-
-          {%- if page.author
-              and page.hide_author != true
-              and page.date
-              and page.hide_date != true -%}
-            <br>
+            <div class="post-authors">
+              {%- for author in page.author -%}
+                <span class="post-author">{{ author }}</span>
+              {%- endfor -%}
+            </div>
           {%- endif -%}
 
           {%- if page.date
               and page.hide_date != true -%}
-            Published
-            <time datetime="{{ page.date | date: "%Y-%m-%d %I:%M" }}">
-              {{ page.date | date: "%-d %B %Y" }}
-            </time>
+            <div class="post-time">
+              Published
+              <time datetime="{{ page.date | date_to_xmlschema }}">
+                {{ page.date | date: "%-d %B %Y" }}
+              </time>
+            </div>
           {%- endif -%}
 
-        </p>
+          </div>
       {%- endif -%}
     {%- endif -%}
 
