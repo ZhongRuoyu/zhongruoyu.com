@@ -18,14 +18,13 @@ nav.navigation {
                 > img.navigation-link-home-logo {
                     width: 3rem;
                     border-radius: 100%;
-                    transition: ease-in-out .3s;
+                    transition: $default-transition;
 
                     &:hover {
                         box-shadow: 0 0px 4px 0 #0000002e, 0 0px 12px 0 #00000026;
                     }
                 }
             }
-
         }
     }
 
@@ -67,9 +66,14 @@ nav.navigation {
             > li.navigation-list-item {
             display: inline-block;
 
-            > a.navigation-link:not(.navigation-link-home) {
+            > a.navigation-link:not(.navigation-link-home),
+            > span.navigation-current-page {
                 padding: 1rem;
                 font-size: $font-small;
+            }
+            
+            > span.navigation-current-page {
+                font-weight: bold;
             }
         }
 

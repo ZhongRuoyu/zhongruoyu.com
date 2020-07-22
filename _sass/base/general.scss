@@ -11,6 +11,7 @@ body {
     font-size: $font-normal;
     overflow-wrap: break-word;
     color: $beta;
+    transition: $default-transition;
 }
 @media #{$tablet-and-below} {
     body {

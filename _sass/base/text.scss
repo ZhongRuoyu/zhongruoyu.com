@@ -32,7 +32,7 @@ p {
 a {
     color: $theme;
     text-decoration: none;
-    transition: 0.3s ease-in-out;
+    transition: $default-transition;
 }
 a:hover {
     color: $beta;
