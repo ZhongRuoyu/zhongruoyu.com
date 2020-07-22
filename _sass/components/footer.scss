@@ -1,10 +1,13 @@
-footer.page-footer {
-    border-top: 1px solid $delta;
+div.footer-wrapper {
     box-sizing: border-box;
-    width: 90%;
     min-height: $viewport-height-split-beta;
-    margin: 3rem auto 0;
-    padding: 1rem 0;
+    padding: 3rem 0 1rem;
+}
+
+footer.page-footer {
+    margin: 0 auto;
+    border-top: 1px solid $delta;
+    width: 90%;
     text-align: center;
     font-size: $font-small;
     color: $gamma;

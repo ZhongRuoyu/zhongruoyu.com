@@ -2,12 +2,20 @@ body > main.page-content {
     font-size: $font-normal;
     box-sizing: border-box;
     padding: 2rem 5%;
-    margin: 5rem 0 2rem;
-    min-height: $mobile-viewport-height-split-alpha;
+    min-height: $viewport-height-split-alpha;
     flex: 1 0 auto;
     flex-direction: column;
     @media print {
-        margin: 2rem 0;
+        margin: 2rem;
+        padding: 0;
+    }
+}
+body > main.page-content > div.wrapper {
+    margin: 5rem 0 2rem;
+}
+@media #{$tablet-and-below} {
+    body > main.page-content {
+        min-height: $mobile-viewport-height-split-alpha;
     }
 }
 @media #{$mobile-smaller} {
@@ -21,20 +29,9 @@ body.centre {
     margin: 0 auto;
     min-height: 100vh;
 }
-@media #{$tablet-and-below} {
-    body.centre {
-        min-height: $min-height-tablet-and-below;
-    }
-}
 body.centre > main.page-content.centre {
-    min-height: $viewport-height-split-alpha;
     display: table;
     margin: auto;
-}
-@media #{$tablet-and-below} {
-    body.centre > main.page-content.centre {
-        min-height: $mobile-viewport-height-split-alpha;
-    }
 }
 body.centre > main.page-content.centre > div.wrapper.centre {
     display: table-cell;
