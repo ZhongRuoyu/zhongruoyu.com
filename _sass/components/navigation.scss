@@ -105,6 +105,11 @@ nav.navigation {
             > span.navigation-current-page {
                 font-weight: bold;
                 color: $theme;
+                transition: $default-transition;
+
+                &:hover {
+                    color: $beta;
+                }
             }
 
             > a.navigation-link-current-category {
