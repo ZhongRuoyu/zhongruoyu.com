@@ -9,6 +9,13 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
   {%- include google_analytics.html -%}
   {%- endif -%}
+  <!-- Begin favicons -->
   <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-128.png" sizes="128x128">
+  <!-- End favicons -->
+  <!-- Begin MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>MathJax = { options: { renderActions: { addMenu: [0, '', ''] } } };</script>
+  <!-- End MathJax -->
 </head>
