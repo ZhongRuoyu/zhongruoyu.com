@@ -1,13 +1,8 @@
 window.onresize = windowResized;
 
 function windowResized() {
-    if (window.matchMedia("screen and (max-width: 425px)").matches) {
-        document.getElementById("mobile-check").style.display = "block";
-    } else {
-        document.getElementById("mobile-check").style.display = "none";
-        if (document.getElementById("mobile-navigation-check").style.display == "block"){
+    if (!(window.matchMedia("screen and (max-width: 425px)").matches) && document.getElementById("mobile-navigation-check").style.display == "block") {
             showNormalNavigationBar();
-        }
     }    
 }
 
