@@ -14,7 +14,10 @@ body > main.page-content {
         min-height: $mobile-viewport-height-split-alpha;
     }
     @media #{$mobile-smaller} {
-        // padding: 2rem 8%;
+        padding: 2rem 8%;
+    }
+    @media #{$mobile-smallest} {
+        padding: 2rem 10%;
     }
     @media print {
         margin: 2rem;
