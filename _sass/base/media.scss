@@ -43,4 +43,8 @@ div.video-container {
         height: 100%;
         margin: 0;
     }
+
+    &.aspect-ratio-4-3 {
+        padding-top: 75%;
+    }
 }
