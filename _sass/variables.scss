@@ -21,7 +21,7 @@ $min-width: 360px;
 $viewport-height-split-alpha: 84vh;
 $viewport-height-split-beta: 16vh;
 $min-height-tablet-and-below: 80vh;
-$mobile-viewport-height-split-alpha: 64vh;
+$mobile-viewport-height-split-alpha: $min-height-tablet-and-below - $viewport-height-split-beta;
 
 $above: "screen and (min-width: 1280px)";
 $tablet-and-above: "screen and (min-width: 425px)";
