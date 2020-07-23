@@ -31,13 +31,17 @@
 
   {%- if page.use_latex -%}
     <!-- Begin MathJax -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>MathJax = { options: { renderActions: { addMenu: [0, '', ''] } } };</script>
+    <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script defer id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer >MathJax = { options: { renderActions: { addMenu: [0, '', ''] } } };</script>
     <!-- End MathJax -->
   {%- endif -%}
 
   <!-- Begin jQuery -->
-    <script src="/assets/scripts/jquery-3.5.0.min.js"></script>
+    <script defer src="/assets/scripts/jquery-3.5.0.min.js"></script>
   <!-- End jQuery -->
+
+  <!-- Begin mobile navigation script -->
+    <script defer src="/assets/scripts/mobile_navigation.js"></script>
+  <!-- End mobile navigation script -->
 </head>
