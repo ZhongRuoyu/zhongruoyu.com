@@ -18,7 +18,7 @@
       {%- for category in site.navigation_categories -%}
         {%- assign page_category = page.category | downcase -%}
         {%- assign category_name = category.name | downcase -%}
-        {%- if page_category == category_name -%}
+        {%- if page_category contains category_name -%}
           {%- assign li_current_category = "navigation-list-item-current-category" -%}
           {%- assign a_current_category = "navigation-link-current-category" -%}
         {%- else -%}
