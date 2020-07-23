@@ -20,6 +20,7 @@ navigation_categories:
 
 hide_info: false
 hide_author: false
+hide_author_twitter: false
 hide_date: false
 hide_date_modified: false
 hide_tags: false

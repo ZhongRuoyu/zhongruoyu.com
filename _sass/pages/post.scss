@@ -1,5 +1,4 @@
 article.post {
-
     > div.post-content {
         a {
             text-decoration: underline;
@@ -26,11 +25,35 @@ article.post {
         margin: 1em auto;
         color: $gamma;
         line-height: 2em;
+
+        > div.post-authors > div.post-author {
+            display: inline-block;
+
+            > span.twitter-link-wrapper {
+
+                &::before {
+                    content: " ";
+                }
+
+                > a.twitter-link {
+                    > img.twitter-icon {
+                        display: inline-block;
+                        width: 2em;
+                        user-select: none;
+                        vertical-align: middle;
+                    }
+        
+                    @media print {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }
 
 main.page-content {
-
+    
     div.post-tags {
         text-align: center;
         margin: 3rem auto 0;
@@ -43,9 +66,9 @@ main.page-content {
         line-height: 2em;
     }
 
-    header.post-header span.post-author:not(:last-child)::after,
-    div.post-tags a.post-tag:not(:last-child)::after {
+    header.post-header div.post-author:not(:last-child)::after,
+    div.post-tags span.post-tag-wrapper:not(:last-child)::after {
         content: "|";
-        padding: 0 0.5em;
+        padding: 0 1ch;
     }
 }

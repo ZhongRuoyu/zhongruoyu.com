@@ -28,7 +28,12 @@
         {%- if show_author -%}
           <div class="post-authors">
             {%- for author in page.author -%}
-              <span class="post-author">{{ author }}</span>
+              {%- if author == site.author and site.hide_author_twitter != true and page.hide_author_twitter != true -%}
+                {%- assign show_twitter = true -%}
+              {%- else -%}
+                {%- assign show_twitter = false -%}
+              {%- endif -%}
+              <div class="post-author">{{ author }}{%- if show_twitter -%}<span class="twitter-link-wrapper"><a class="twitter-link" href="https://twitter.com/{{ site.twitter.username | replace:"@","" }}"><img class="twitter-icon" src="/assets/images/icons/twitter_logo_blue.svg" alt="Twitter"></a></span>{%- endif -%}</div> 
             {%- endfor -%}
           </div>
         {%- endif -%}
