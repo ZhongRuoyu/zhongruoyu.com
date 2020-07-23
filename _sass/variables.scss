@@ -1,19 +1,25 @@
+// wrapper width
 $min-width: 360px;
 $max-width: 960px;
 $narrow-max-width: 0.6*$max-width;
 
+// viewport height
 $viewport-height-split-alpha: 85vh;
 $viewport-height-split-beta: 15vh;
-$min-height-tablet-and-below: 85vh;
-$mobile-viewport-height-split-alpha: $min-height-tablet-and-below - $viewport-height-split-beta;
+$min-height-tablet: 90vh;
+$min-height-mobile: 85vh;
+$tablet-viewport-height-split-alpha: $min-height-tablet - $viewport-height-split-beta;
+$mobile-viewport-height-split-alpha: $min-height-mobile - $viewport-height-split-beta;
 
-$above: "screen and (min-width: 1280px)";
+// media types
+$above: "screen and (min-width: 1024px)";
 $tablet-and-above: "screen and (min-width: 425px)";
-$tablet: "screen and (min-width: 425px) and (max-width: 1280px)";
-$tablet-and-below: "screen and (max-width: 1280px)";
+$tablet: "screen and (min-width: 425px) and (max-width: 1024px)";
+$tablet-and-below: "screen and (max-width: 1024px)";
 $mobile: "screen and (max-width: 425px)";
 $mobile-smaller: "screen and (max-width: 384px)";
 
+// colours
 $theme: #008b8b; // Theme colour
 $alpha: #333333; // For headings & other important text
 $beta: #666666; // For normal text
@@ -21,19 +27,23 @@ $gamma: #999999; // For unimportant text
 $delta: #cccccc; // For text frames, etc.
 $epsilon: #e6e6e6; // For backgrounds, etc.
 
+// font families
 $sans: "Noto Sans", "Noto Sans SC", sans-serif;
 $serif: "Noto Serif", "Noto Serif SC", serif;
 $monospace: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", monospace;
 
-$indentation-unit: 2rem;
+// font size
 $font-normal: 1rem;
 $font-small: 0.9*$font-normal;
 $font-smaller: 0.8*$font-normal;
 $font-large: 1.2*$font-normal;
 $font-larger: 1.5*$font-normal;
 
+// units
+$indentation-unit: 2rem;
 $border-radius: 4px;
 
+// animation
 $default-transition: ease-in-out 0.5s;
 @mixin image-frame-animation {
     transition: $default-transition;
