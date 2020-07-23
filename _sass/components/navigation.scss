@@ -14,17 +14,19 @@ nav.navigation {
             text-align: center;
 
             > a.navigation-link-home {
-                display: block;
+                display: inline-block;
                 margin: 0 1rem;
                 width: max-content;
                 border-radius: 100%;
                 cursor: pointer;
+                vertical-align: middle;
 
                 > img.navigation-link-home-logo {
                     width: 3rem;
                     max-width: initial;
                     margin: 0;
                     border-radius: 100%;
+                    vertical-align: middle;
                     @include image-frame-animation;
                 }
             }
@@ -124,6 +126,7 @@ nav.navigation {
         }
 
         @media #{$mobile} {
+            min-width: max-content;
 
             > ul.navigation-list {
                 height: max-content;
