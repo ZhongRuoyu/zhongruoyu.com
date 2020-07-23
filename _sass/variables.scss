@@ -11,12 +11,14 @@ $epsilon: #e6e6e6; // For backgrounds, etc.
 
 $indentation-unit: 2rem;
 $font-normal: 1rem;
-$font-small: 0.8*$font-normal;
+$font-small: 0.9*$font-normal;
+$font-smaller: 0.8*$font-normal;
+$font-large: 1.2*$font-normal;
 
 $border-radius: 4px;
 $min-width: 360px;
 
-$viewport-height-split-alpha: 85vh;
+$viewport-height-split-alpha: 84vh;
 $viewport-height-split-beta: 16vh;
 $min-height-tablet-and-below: 80vh;
 $mobile-viewport-height-split-alpha: 64vh;
