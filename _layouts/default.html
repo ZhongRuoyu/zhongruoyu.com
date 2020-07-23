@@ -25,7 +25,7 @@ layout: compress
     {%- endif -%}
 
     <main class="page-content {{ centre }} {{ narrow }}" aria-label="Content">
-      <div class="wrapper {{ centre }} {{ title }}">
+      <div id="page-content-wrapper" class="wrapper {{ centre }} {{ title }}">
 
         {%- if page.layout != "post" -%}
           {%- include header.html -%}
@@ -41,6 +41,8 @@ layout: compress
     </main>
 
     {%- include footer.html -%}
+
+    {%- include body_scripts.html -%}
 
   </body>
 

@@ -19,6 +19,7 @@ $tablet-and-below: "screen and (max-width: 1280px)";
 $tablet-smaller-and-below: "screen and (max-width: 512px)";
 $mobile: "screen and (max-width: 425px)";
 $mobile-smaller: "screen and (max-width: 384px)";
+// see also mobile_navigation.js
 
 // colours
 $theme: #008b8b; // Theme colour
@@ -45,7 +46,7 @@ $indentation-unit: 2rem;
 $border-radius: 4px;
 
 // animation
-$default-transition: ease-in-out 0.5s;
+$default-transition: all 0.5s ease-in-out;
 @mixin image-frame-animation {
     transition: $default-transition;
 
