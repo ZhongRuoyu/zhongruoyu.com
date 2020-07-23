@@ -26,11 +26,16 @@ article.post {
         color: $gamma;
         line-height: 2em;
 
+        > div.post-authors,
+        > div.post-date-published,
+        > div.post-date-updated {
+            display: block;
+        }
+
         > div.post-authors > div.post-author {
             display: inline-block;
 
             > span.twitter-link-container {
-
                 &::before {
                     content: " ";
                 }
@@ -44,7 +49,7 @@ article.post {
                         user-select: none;
                         vertical-align: middle;
                     }
-        
+
                     @media print {
                         display: none;
                     }
@@ -55,7 +60,6 @@ article.post {
 }
 
 main.page-content {
-    
     div.post-tags-wrapper {
         text-align: center;
         margin: 3rem auto 0;
