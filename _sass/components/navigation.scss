@@ -2,6 +2,7 @@ nav.navigation {
     user-select: none;
     padding: 1rem;
     box-sizing: border-box;
+    width: 100%;
 
     > ul.navigation-list {
         padding: 0;
@@ -126,8 +127,7 @@ nav.navigation {
         }
 
         @media #{$mobile} {
-            min-width: max-content;
-
+            width: 100%;
             > ul.navigation-list {
                 height: max-content;
                 
