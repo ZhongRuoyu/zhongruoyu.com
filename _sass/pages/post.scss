@@ -1,46 +1,51 @@
-article.post > div.post-content a {
-    text-decoration: underline;
+article.post {
+
+    > div.post-content {
+        a {
+            text-decoration: underline;
+        }
+        a.footnote {
+            text-decoration: none;
+        }
+
+        div.footnotes {
+            margin-top: 3em;
+
+            a.reversefootnote {
+                text-decoration: none;
+                user-select: none;
+            }
+
+            p {
+                margin: 0.5em auto;
+            }
+        }
+    }
+
+    header.post-header div.post-author-date {
+        margin: 1em auto;
+        color: $gamma;
+        line-height: 2em;
+    }
 }
 
+main.page-content {
 
-article.post > div.post-content div.footnotes {
-    margin-top: 3em;
-}
-article.post > div.post-content a.footnote {
-    text-decoration: none;
-}
-article.post > div.post-content div.footnotes a.reversefootnote {
-    text-decoration: none;
-    user-select: none;
-}
-article.post > div.post-content div.footnotes p {
-    margin: 0.5em auto;
-}
+    div.post-tags {
+        text-align: center;
+        margin: 3rem auto 0;
+        padding: 1rem;
+        width: max-content;
+        max-width: 90%;
+        min-width: 36%;
+        border-top: 1px solid $epsilon;
+        border-bottom: 1px solid $epsilon;
+        line-height: 2em;
+    }
 
-article.post header.post-header div.post-author-date {
-    margin: 1em auto;
-    color: $gamma;
-    line-height: 2em;
-}
-
-main.page-content div.post-tags {
-    text-align: center;
-    margin: 3rem auto 0;
-    padding: 1rem;
-    width: max-content;
-    max-width: 90%;
-    min-width: 36%;
-    border-top: 1px solid $epsilon;
-    border-bottom: 1px solid $epsilon;
-    line-height: 2em;
-}
-
-main.page-content
-    header.post-header
-    span.post-author:not(:last-child)::after,
-main.page-content
-    div.post-tags
-    a.post-tag:not(:last-child)::after {
+    header.post-header span.post-author:not(:last-child)::after,
+    div.post-tags a.post-tag:not(:last-child)::after {
         content: "|";
         padding: 0 0.5em;
+    }
 }

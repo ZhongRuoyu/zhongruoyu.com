@@ -12,26 +12,21 @@ body {
     overflow-wrap: break-word;
     color: $beta;
     transition: $default-transition;
-}
-@media #{$tablet} {
-    body {
+
+    @media #{$tablet} {
         min-height: $min-height-tablet;
     }
-}
-@media #{$mobile} {
-    body {
+    @media #{$mobile} {
         min-height: $min-height-mobile;
     }
-}
-@media print {
-    body {
+    @media print {
         display: initial;
     }
 }
 
-@media print {
-    .noprint,
-    .noprint * {
+.noprint,
+.noprint * {
+    @media print {
         display: none;
     }
 }

@@ -23,6 +23,11 @@ main.page-content > div.wrapper > div.posts-list-wrapper {
                 font-size: $font-large;
                 margin: 0;
                 padding: 0.2em 0;
+                transition: $default-transition;
+
+                &:hover {
+                    color: $theme;
+                }
             }
         }
     }

@@ -1,19 +1,19 @@
-/* layout: default */
+main.page-content {
+    header.page-header {
+        text-align: left;
+        margin: 3em auto;
+    }
 
-main.page-content header.page-header {
-    text-align: left;
-    margin: 3em auto;
-}
+    &.centre header.page-header {
+        text-align: center !important;
+        margin: auto !important;
+    }
 
-main.page-content.centre header.page-header {
-    text-align: center !important;
-    margin: auto !important;
-}
+    & header.page-header div.page-title {
+        // Placeholder
+    }
 
-main.page-content header.page-header div.page-title {
-    // Placeholder
-}
-
-main.page-content header.page-header img.header-image {
-    width: 80%;
+    & header.page-header img.header-image {
+        width: 80%;
+    }
 }
