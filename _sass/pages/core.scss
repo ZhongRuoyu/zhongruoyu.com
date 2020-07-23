@@ -1,3 +1,10 @@
+// home
+div.wrapper.home img.header-image {
+    width: 10rem !important;
+    border-radius: 100%;
+    @include image-frame-animation;
+}
+
 // about
 div.wrapper.about .author {
     padding-top: 1em;
@@ -6,4 +13,6 @@ div.wrapper.about .author {
 // 404
 div.wrapper.page-not-found img.header-image {
     width: 10rem !important;
+    border-radius: 100%;
+    @include image-frame-animation;
 }

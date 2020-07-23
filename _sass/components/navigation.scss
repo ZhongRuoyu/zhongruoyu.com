@@ -19,11 +19,7 @@ nav.navigation {
                 > img.navigation-link-home-logo {
                     width: 3rem;
                     border-radius: 100%;
-                    transition: $default-transition;
-
-                    &:hover {
-                        box-shadow: 0 0px 4px 0 #0000002e, 0 0px 12px 0 #00000026;
-                    }
+                    @include image-frame-animation;
                 }
             }
         }
