@@ -2,9 +2,11 @@
     and page.hide_tags != true -%}
   <div class="post-tags">
     {%- for tag in page.tag -%}
-      <a class="post-tag" href="#{{ tag | slugify }}">
-        {{ tag }}
-      </a>
+      <span class="post-tag-wrapper">
+        <a class="post-tag" href="#{{ tag | slugify }}">
+          {{ tag }}
+        </a>
+      </span>
     {%- endfor -%}
   </div>
 {%- endif -%}
