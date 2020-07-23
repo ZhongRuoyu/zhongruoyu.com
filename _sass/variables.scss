@@ -2,9 +2,9 @@ $min-width: 360px;
 $max-width: 960px;
 $narrow-max-width: 0.6*$max-width;
 
-$viewport-height-split-alpha: 84vh;
-$viewport-height-split-beta: 16vh;
-$min-height-tablet-and-below: 80vh;
+$viewport-height-split-alpha: 85vh;
+$viewport-height-split-beta: 15vh;
+$min-height-tablet-and-below: 85vh;
 $mobile-viewport-height-split-alpha: $min-height-tablet-and-below - $viewport-height-split-beta;
 
 $above: "screen and (min-width: 1280px)";
