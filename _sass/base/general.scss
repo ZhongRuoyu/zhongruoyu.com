@@ -4,7 +4,7 @@ body {
     margin: auto;
     box-sizing: border-box;
     width: 90%;
-    max-width: 960px;
+    max-width: $max-width;
     min-width: $min-width;
     min-height: 100vh;
     font-family: $sans;
@@ -33,5 +33,5 @@ body {
 
 // narrow_content
 body.narrow {
-    max-width: 512px;
+    max-width: $narrow-max-width;
 }
