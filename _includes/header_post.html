@@ -33,7 +33,7 @@
               {%- else -%}
                 {%- assign show_twitter = false -%}
               {%- endif -%}
-              <div class="post-author">{{ author }}{%- if show_twitter -%}<span class="twitter-link-wrapper"><a class="twitter-link" href="https://twitter.com/{{ site.twitter.username | replace:"@","" }}"><img class="twitter-icon" src="/assets/images/icons/twitter_logo_blue.svg" alt="Twitter"></a></span>{%- endif -%}</div> 
+              <div class="post-author">{{ author }}{%- if show_twitter -%}<span class="twitter-link-container"><a class="twitter-link" href="https://twitter.com/{{ site.twitter.username | replace:"@","" }}"><img class="twitter-icon" src="/assets/images/icons/twitter_logo_blue.svg" alt="Twitter"></a></span>{%- endif -%}</div> 
             {%- endfor -%}
           </div>
         {%- endif -%}

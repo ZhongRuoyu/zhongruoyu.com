@@ -29,7 +29,7 @@ article.post {
         > div.post-authors > div.post-author {
             display: inline-block;
 
-            > span.twitter-link-wrapper {
+            > span.twitter-link-container {
 
                 &::before {
                     content: " ";
@@ -54,7 +54,7 @@ article.post {
 
 main.page-content {
     
-    div.post-tags {
+    div.post-tags-wrapper {
         text-align: center;
         margin: 3rem auto 0;
         padding: 1rem;
@@ -67,7 +67,7 @@ main.page-content {
     }
 
     header.post-header div.post-author:not(:last-child)::after,
-    div.post-tags span.post-tag-wrapper:not(:last-child)::after {
+    div.post-tags-wrapper > span.post-tag-container:not(:last-child)::after {
         content: "|";
         padding: 0 1ch;
     }
