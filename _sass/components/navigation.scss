@@ -104,6 +104,7 @@ nav.navigation {
             > span.navigation-current-page {
                 padding: 1rem;
                 font-size: $font-small;
+                vertical-align: middle;
             }
 
             > span.navigation-current-page {
@@ -131,7 +132,6 @@ nav.navigation {
                     font-size: $font-normal;
                     text-align: left;
                     height: 2em;
-                    vertical-align: baseline;
     
                     &.navigation-list-item-home {
                         display: block;
