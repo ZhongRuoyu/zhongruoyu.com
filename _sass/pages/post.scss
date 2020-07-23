@@ -39,6 +39,8 @@ article.post {
                     > img.twitter-icon {
                         display: inline-block;
                         width: 2em;
+                        max-width: initial;
+                        margin: 0;
                         user-select: none;
                         vertical-align: middle;
                     }
