@@ -1,21 +1,3 @@
-$sans: "Noto Sans", "Noto Sans SC", sans-serif;
-$serif: "Noto Serif", "Noto Serif SC", serif;
-$monospace: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", monospace;
-
-$theme: #008b8b; // Theme colour
-$alpha: #333333; // For headings & other important text
-$beta: #666666; // For normal text
-$gamma: #999999; // For unimportant text
-$delta: #cccccc; // For text frames, etc.
-$epsilon: #e6e6e6; // For backgrounds, etc.
-
-$indentation-unit: 2rem;
-$font-normal: 1rem;
-$font-small: 0.9*$font-normal;
-$font-smaller: 0.8*$font-normal;
-$font-large: 1.2*$font-normal;
-
-$border-radius: 4px;
 $min-width: 360px;
 $max-width: 960px;
 $narrow-max-width: 0.6*$max-width;
@@ -32,4 +14,30 @@ $tablet-and-below: "screen and (max-width: 1280px)";
 $mobile: "screen and (max-width: 425px)";
 $mobile-smaller: "screen and (max-width: 384px)";
 
+$theme: #008b8b; // Theme colour
+$alpha: #333333; // For headings & other important text
+$beta: #666666; // For normal text
+$gamma: #999999; // For unimportant text
+$delta: #cccccc; // For text frames, etc.
+$epsilon: #e6e6e6; // For backgrounds, etc.
+
+$sans: "Noto Sans", "Noto Sans SC", sans-serif;
+$serif: "Noto Serif", "Noto Serif SC", serif;
+$monospace: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", monospace;
+
+$indentation-unit: 2rem;
+$font-normal: 1rem;
+$font-small: 0.9*$font-normal;
+$font-smaller: 0.8*$font-normal;
+$font-large: 1.2*$font-normal;
+
+$border-radius: 4px;
+
 $default-transition: ease-in-out 0.5s;
+@mixin image-frame-animation {
+    transition: $default-transition;
+
+    &:hover {
+        box-shadow: 0 0px 16px 0 #00000040;
+    }
+}
