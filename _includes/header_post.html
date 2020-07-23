@@ -34,7 +34,7 @@
         {%- endif -%}
 
         {%- if show_date -%}
-          <div class="post-date">
+          <div class="post-date-published">
             Published
             <time datetime="{{ page.date | date_to_xmlschema }}">
               {{ page.date | date: "%-d %B %Y" }}
@@ -43,7 +43,7 @@
         {%- endif -%}
 
         {%- if show_date_modified -%}
-          <div class="post-time">
+          <div class="post-date-modified">
             Last modified
             <time datetime="{{ page.date_modified | date_to_xmlschema }}">
               {{ page.date_modified | date: "%-d %B %Y" }}
