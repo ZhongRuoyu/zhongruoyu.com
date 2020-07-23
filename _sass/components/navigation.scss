@@ -3,16 +3,19 @@ nav.navigation {
     padding: 1rem;
     box-sizing: border-box;
     width: 100%;
+    border: 2px solid black;
 
     > ul.navigation-list {
         padding: 0;
         list-style: none;
         margin: 1em 0;
+        border: 2px solid red;
 
         > li.navigation-list-item {
             padding: 0;
             vertical-align: middle;
             text-align: center;
+            border: 2px solid blue;
 
             > a.navigation-link-home {
                 display: inline-block;
@@ -21,6 +24,7 @@ nav.navigation {
                 border-radius: 100%;
                 cursor: pointer;
                 vertical-align: middle;
+                border: 2px solid green;
 
                 > img.navigation-link-home-logo {
                     width: 3rem;
