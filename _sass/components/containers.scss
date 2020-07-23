@@ -17,7 +17,12 @@ body > main.page-content > div.wrapper {
     margin: 5rem 0 2rem;
     width: 100%;
 }
-@media #{$tablet-and-below} {
+@media #{$tablet} {
+    body > main.page-content {
+        min-height: $tablet-viewport-height-split-alpha;
+    }
+}
+@media #{$mobile} {
     body > main.page-content {
         min-height: $mobile-viewport-height-split-alpha;
     }

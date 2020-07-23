@@ -13,9 +13,14 @@ body {
     color: $beta;
     transition: $default-transition;
 }
-@media #{$tablet-and-below} {
+@media #{$tablet} {
     body {
-        min-height: $min-height-tablet-and-below;
+        min-height: $min-height-tablet;
+    }
+}
+@media #{$mobile} {
+    body {
+        min-height: $min-height-mobile;
     }
 }
 @media print {
