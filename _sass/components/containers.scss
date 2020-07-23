@@ -5,13 +5,17 @@ body > main.page-content {
     min-height: $viewport-height-split-alpha;
     flex: 1 0 auto;
     flex-direction: column;
+    width: 100%;
     @media print {
         margin: 2rem;
         padding: 0;
+        width: initial;
+        min-height: initial;
     }
 }
 body > main.page-content > div.wrapper {
     margin: 5rem 0 2rem;
+    width: 100%;
 }
 @media #{$tablet-and-below} {
     body > main.page-content {
