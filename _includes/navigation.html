@@ -1,6 +1,6 @@
 {%- if page.home == true -%}
   {%- assign home = "navigation-home" -%}
-  {%- assign forward = "forward" -%}
+  {%- assign forward = "" -%} {%- comment -%} display style changed {%- endcomment -%}
 {%- else -%}
   {%- assign home = "" -%}
   {%- assign forward = "" -%}
@@ -16,7 +16,9 @@
         </a>
       </li>
       {%- for category in site.navigation_categories -%}
-        {%- if category.name == page.categories -%}
+        {%- assign page_category = page.category | downcase -%}
+        {%- assign category_name = category.name | downcase -%}
+        {%- if page_category == category_name -%}
           {%- assign li_current_category = "navigation-list-item-current-category" -%}
           {%- assign a_current_category = "navigation-link-current-category" -%}
         {%- else -%}
