@@ -7,6 +7,13 @@
   {%- assign post_header = "" -%}
   {%- assign post_title = "" -%}
 {%- endif -%}
+{%- if page.header_image -%}
+  {%- assign container_with_header_image = "page-title-container-with-header-image-above" -%}
+  {%- assign title_with_header_image = "page-title-with-header-image-above" -%}
+{%- else -%}
+  {%- assign container_with_header_image = "" -%}
+  {%- assign title_with_header_image = "" -%}
+{%- endif -%}
 
 <div class="header-wrapper">
   <header class="page-header {{ post_header }}">
@@ -15,8 +22,8 @@
     {%- endif -%}
 
     {%- if page.hide_title != true -%}
-      <div class="page-title {{ post_title }} {{ title }}">
-        <h1>{{ page.title }}</h1>
+      <div class="page-title-container {{ container_with_header_image }} {{ post_title }} {{ title }}">
+        <h1 class="page-title {{ title_with_header_image }}">{{ page.title }}</h1>
       </div>
     {%- endif -%}
     
