@@ -1,7 +1,7 @@
 body > main.page-content {
     font-size: $font-normal;
     box-sizing: border-box;
-    margin: 7rem 0 3rem;
+    padding: 7rem 0 3rem;
     min-height: $viewport-height-split-alpha;
     flex: 1 0 auto;
     flex-direction: column;
@@ -39,6 +39,7 @@ body.centre {
 
     > main.page-content.centre {
         display: table;
+        margin: auto;
 
         > div.wrapper.centre {
             display: table-cell;
