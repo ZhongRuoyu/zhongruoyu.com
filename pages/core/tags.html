@@ -1,0 +1,65 @@
+---
+title: Tags
+permalink: /tags/
+---
+{%- if site.tags.length == 0 -%}
+<div class="post-not-found-wrapper">
+  <p class="post-not-found">
+    There are currently no tagged posts.
+  </p>
+</div>
+{%- else -%}
+  {%- assign tags = "" | split: "," -%}
+  {%- for tag in site.tags -%}
+    {%- assign tag_downcase = tag[0] | downcase -%}
+    {%- assign tags = tags | push: tag_downcase -%}
+  {%- endfor -%}
+  {%- assign tags_sorted = tags | sort_natural -%}
+
+  <div id="tags-list" class="site-tags-wrapper">
+  {%- assign tags_list_displayed = "" | split: "," -%}
+  {%- for tag_sorted in tags_sorted -%}
+    {%- for tag in site.tags -%}
+      {%- assign tag_downcase = tag[0] | downcase -%}
+      {%- if tag_downcase == tag_sorted -%}
+        {%- unless tags_list_displayed contains tag_downcase -%}
+          <span class="site-tag-container">
+            <a class="site-tag" href="#{{ tag[0] | slugify }}">
+              {{ tag[0] }}
+            </a>
+          </span>
+          {%- assign tags_list_displayed = tags_list_displayed | push: tag_downcase -%}
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+  </div>
+
+  {%- for tag_sorted in tags_sorted -%}
+    {%- for tag in site.tags -%}
+      {%- assign tag_downcase = tag[0] | downcase -%}
+      {%- if tag_downcase == tag_sorted -%}
+        <div class="tag-catalogue-container">
+          <a class="tag-catalogue-title-link" href="#tags-list">
+            <h2 class="tag-catalogue-title" id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+          </a>
+          <div class="posts-list-wrapper tag-catalogue">
+            <div class="posts-list">
+              {%- for post in tag[1] -%}
+                <a class="posts-list-item-link" href="{{ post.url }}">
+                  <div class="posts-list-item-date-wrapper">
+                    <time class="posts-list-item-date" datetime="{{ post.date | date_to_xmlschema }}">
+                    {{ post.date | date: "%-d %b %Y" }}
+                    </time>
+                  </div>
+                  <h3 class="posts-list-item-title">{{ post.title }}</h3>
+                </a>
+              {%- endfor -%}
+            </div>
+          </div>
+        </div>
+        
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endif -%}
