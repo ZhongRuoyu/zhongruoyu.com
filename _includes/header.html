@@ -14,16 +14,27 @@
   {%- assign container_with_header_image = "" -%}
   {%- assign title_with_header_image = "" -%}
 {%- endif -%}
+{%- if page.home -%}
+  {%- assign home_header = "home-header" -%}
+  {%- assign home_header_image = "home-header-image" -%}
+  {%- assign home_title_container = "home-title-container" -%}
+  {%- assign home_title = "home-title" -%}
+{%- else -%}
+  {%- assign home_header = "" -%}
+  {%- assign home_header_image = "" -%}
+  {%- assign home_title_container = "" -%}
+  {%- assign home_title = "" -%}
+{%- endif -%}
 
 <div class="header-wrapper">
-  <header class="page-header {{ post_header }}">
+  <header class="page-header {{ post_header }} {{ home_header }}">
     {%- if page.header_image -%}
-      <img class="header-image" src="{{ page.header_image }}" alt="{{ page.title }}">
+      <img class="header-image {{ home_header_image }}" src="{{ page.header_image }}" alt="{{ page.title }}">
     {%- endif -%}
 
     {%- if page.hide_title != true -%}
-      <div class="page-title-container {{ container_with_header_image }} {{ post_title }} {{ title }}">
-        <h1 class="page-title {{ title_with_header_image }}">{{ page.title }}</h1>
+      <div class="page-title-container {{ home_title_container }} {{ container_with_header_image }} {{ post_title }} {{ title }}">
+        <h1 class="page-title {{ home_title }} {{ title_with_header_image }}">{{ page.title }}</h1>
       </div>
     {%- endif -%}
     

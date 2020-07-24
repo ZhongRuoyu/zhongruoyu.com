@@ -12,20 +12,26 @@ layout: compress
 {%- else -%}
   {%- assign narrow = "" -%}
 {%- endif -%}
+{%- if page.home -%}
+  {%- assign home = "home" -%}
+{%- else -%}
+  {%- assign home = "" -%}
+{%- endif -%}
+
 
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {%- include head.html -%}
 
-  <body class="{{ centre }} {{ narrow }}">
+  <body class="{{ centre }} {{ narrow }} {{ home }}">
 
     {%- if page.home != true -%}
       {%- include navigation.html -%}
     {%- endif -%}
 
-    <main class="page-content {{ centre }} {{ narrow }}" aria-label="Content">
-      <div id="page-content-wrapper" class="wrapper {{ centre }} {{ title }}">
+    <main id="page-content" class="page-content {{ centre }} {{ narrow }} {{ home }}" aria-label="Content">
+      <div class="wrapper {{ centre }} {{ title }} {{ home }}">
 
         {%- if page.layout != "post" -%}
           {%- include header.html -%}
