@@ -18,7 +18,7 @@ div.wrapper.page-not-found img.header-image {
 }
 
 // tags
-div.header.wrapper > header.post-header div.post-author:not(:last-child)::after,
+div.header-wrapper > header.post-header div.post-author:not(:last-child)::after,
 div.post-tags-wrapper > span.post-tag-container:not(:last-child)::after {
     content: "|";
     padding: 0 1ch;
