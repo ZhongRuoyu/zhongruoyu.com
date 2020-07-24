@@ -51,6 +51,11 @@ defaults:
     values:
       layout: default
       image: /assets/images/default-card.png
+  -
+    scope:
+      path: "_posts"
+    values:
+      layout: post
 
 sass:
   style: compressed
