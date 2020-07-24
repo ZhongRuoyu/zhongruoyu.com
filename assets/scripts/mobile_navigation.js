@@ -37,7 +37,9 @@ function hideNavigationBar() {
     for (let i = list_items_count - 1; i >= 0; i--) {
         $(list_items[i]).delay(100 * (list_items_count - i - 1)).fadeOut(300, "swing").delay(100 * (i + 1));
     }
-    $(document.getElementById("page-content-wrapper")).delay(200).animate({marginTop: "5rem"}, 100 * (list_items_count + 1), "swing");
+    $(document.getElementById("page-content-wrapper")).delay(200).animate({marginTop: "5rem"}, 100 * (list_items_count + 1), "swing", function() {
+        document.getElementById("page-content-wrapper").removeAttribute("style");
+    });
     document.getElementById("mobile-navigation-check").style.display = "none";
 }
 
