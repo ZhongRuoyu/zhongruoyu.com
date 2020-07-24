@@ -40,6 +40,8 @@ body.centre {
     > main.page-content.centre {
         display: table;
         margin: auto;
+        padding: 0;
+        padding-top: 2rem;
 
         > div.wrapper.centre {
             display: table-cell;
