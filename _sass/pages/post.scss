@@ -13,6 +13,8 @@ article.post {
             a.reversefootnote {
                 text-decoration: none;
                 user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
             }
 
             p {
@@ -47,6 +49,8 @@ article.post {
                         max-width: initial;
                         margin: 0;
                         user-select: none;
+                        -webkit-user-select: none;
+                        -ms-user-select: none;
                         vertical-align: middle;
                     }
 
