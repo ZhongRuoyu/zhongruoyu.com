@@ -1,13 +1,14 @@
 nav.navigation {
     user-select: none;
     padding: 1rem;
+    padding-bottom: 0;
     box-sizing: border-box;
     width: 100%;
 
     > ul.navigation-list {
-        padding: 0;
+        padding: 1rem 0;
         list-style: none;
-        margin: 1em 0;
+        margin: 0;
 
         > li.navigation-list-item {
             padding: 0;
@@ -33,33 +34,6 @@ nav.navigation {
             }
         }
     }
-
-    /* former style below 
-    &.navigation-home {
-        font-size: $font-normal;
-
-        > ul.navigation-list {
-
-            > li.navigation-list-item {
-                margin: 1em auto;
-
-                &:not(.navigation-list-item-home) {
-                    display: block;
-                    line-height: 2em;
-                }
-
-                > a.navigation-link {
-                    margin: 1em auto;
-                    padding: 0;
-                    font-size: $font-normal;
-                }
-            }
-
-            > li.navigation-list-item-home {
-                display: none;
-            }
-        }
-    } */
 
     &.navigation-home {
         font-size: $font-normal;
@@ -138,7 +112,8 @@ nav.navigation {
     
                     &.navigation-list-item-home {
                         display: block;
-                        height: 4em;
+                        height: 3em;
+                        padding-bottom: 1em;
                     }
     
                     &:not(.navigation-list-item-home) {
