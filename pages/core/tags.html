@@ -2,7 +2,8 @@
 title: Tags
 permalink: /tags/
 ---
-{%- if site.tags.length == 0 -%}
+{%- assign tags_count = site.tags | size -%}
+{%- if tags_count == 0 -%}
 <div class="post-not-found-wrapper">
   <p class="post-not-found">
     There are currently no tagged posts.
