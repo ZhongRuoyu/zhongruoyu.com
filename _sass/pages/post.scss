@@ -59,22 +59,4 @@ article.post {
     }
 }
 
-main.page-content {
-    div.post-tags-wrapper {
-        text-align: center;
-        margin: 3rem auto 0;
-        padding: 1rem;
-        width: max-content;
-        max-width: 90%;
-        min-width: 36%;
-        border-top: 1px solid $epsilon;
-        border-bottom: 1px solid $epsilon;
-        line-height: 2em;
-    }
-
-    header.post-header div.post-author:not(:last-child)::after,
-    div.post-tags-wrapper > span.post-tag-container:not(:last-child)::after {
-        content: "|";
-        padding: 0 1ch;
-    }
-}
+// see also pages/core.scss

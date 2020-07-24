@@ -1,4 +1,5 @@
-main.page-content > div.wrapper > div.posts-list-wrapper {
+main.page-content > div.wrapper > div.posts-list-wrapper,
+main.page-content > div.wrapper > div.tag-catalogue-container > div.tag-catalogue {
 
     > div.posts-list {
         width: 80%;
@@ -16,6 +17,10 @@ main.page-content > div.wrapper > div.posts-list-wrapper {
 
             > div.posts-list-item-date-wrapper {
                 padding: 0.2em 0;
+
+                @media print {
+                    break-after: avoid;
+                }
             }
 
             > h3.posts-list-item-title {
