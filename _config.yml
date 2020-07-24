@@ -56,6 +56,7 @@ defaults:
       path: "_posts"
     values:
       layout: post
+      author: Zhong Ruoyu
 
 sass:
   style: compressed
