@@ -3,7 +3,7 @@
   <div class="post-tags-wrapper">
     {%- for tag in page.tag -%}
       <span class="post-tag-container">
-        <a class="post-tag" href="#{{ tag | slugify }}">
+        <a class="post-tag" href="/tags/#{{ tag | slugify }}">
           {{ tag }}
         </a>
       </span>
