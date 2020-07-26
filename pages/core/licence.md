@@ -2,6 +2,7 @@
 title: Licence
 permalink: /licence/
 redirect_from: /license/
+description: The licence for contents on zhongruoyu.com.
 ---
 
 Copyright © 2020 Zhong Ruoyu. All rights reserved.
