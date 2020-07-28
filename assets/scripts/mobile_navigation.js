@@ -56,8 +56,10 @@ function showNormalNavigationBar() {
     let list_items = document.getElementsByClassName("mobile-navigation-list-item-animated");
     let list_items_count = list_items.length;
     for (let i = list_items_count - 1; i >= 0; i--) {
+        $(list_items[i]).finish();
         list_items[i].removeAttribute("style");
     }
+    $(document.getElementById("page-content")).finish();
     document.getElementById("page-content").removeAttribute("style");
     document.getElementById("mobile-navigation-check").style.display = "none";
     document.getElementById("mobile-navigation-list-item-home").style.display = "none";
