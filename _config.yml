@@ -28,14 +28,10 @@ hide_tags: false
 twitter:
   username: ZhongRuoyu
   card: summary_large_image
-facebook:
-  publisher: https://www.facebook.com/ciel.ruoyu
 social:
   name: Zhong Ruoyu
   links:
     - https://twitter.com/ZhongRuoyu
-    - https://www.facebook.com/ciel.ruoyu
-    - https://www.instagram.com/cielchung/
     - https://github.com/ZhongRuoyu
 
 webmaster_verifications:
