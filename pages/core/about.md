@@ -6,15 +6,15 @@ narrow_content: false
 description: Find information about this site.
 ---
 
-Thank you for visiting zhongruoyu.com.
+Thank you for visiting www.zhongruoyu.com.
 
 This site has been available since 22 July 2020. It is currently preserved for future use.
 
-<!-- Please stay tuned for future updates at [ruoyu.xyz](https://ruoyu.xyz). -->
+<!-- Please stay tuned for future updates at [www.ruoyu.xyz](https://www.ruoyu.xyz). -->
 
 <p class="author">
   Ruoyu <!-- <br>
-  <a class="forward" href="https://ruoyu.xyz/about/">About me</a> -->
+  <a class="forward" href="https://www.ruoyu.xyz/about/">About me</a> -->
 </p>
 
 <a class="forward" href="/licence/">Licence</a>

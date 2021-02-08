@@ -1,12 +1,12 @@
-# <span>zhongruoyu.com</span>
+# <span>www.zhongruoyu.com</span>
 
 ## About
 
-This is the repository for https://zhongruoyu.com, powered by [Jekyll](https://jekyllrb.com/).
+This is the repository for https://www.zhongruoyu.com, powered by [Jekyll](https://jekyllrb.com/).
 
 The site has been available since 22 July 2020. It is currently preserved for future use.
 
-Please stay tuned for future updates at https://ruoyu.xyz.
+<!-- Please stay tuned for future updates at https://www.ruoyu.xyz. -->
 
 ## Licence
 
