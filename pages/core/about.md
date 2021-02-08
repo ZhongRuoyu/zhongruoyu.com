@@ -3,7 +3,7 @@ title: About
 layout: post
 permalink: /about/
 narrow_content: false
-description: Find information about zhongruoyu.com, and about Ruoyu as well.
+description: Find information about this site.
 ---
 
 Thank you for visiting zhongruoyu.com.
