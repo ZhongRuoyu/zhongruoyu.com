@@ -12,4 +12,4 @@ The site has been available since 22 July 2020. It is currently preserved for fu
 
 Copyright © 2020 - 2021 Zhong Ruoyu. All rights reserved.
 
-For more licensing information, see [here](/LICENSE.md).
+For more licensing information, see [here](/LICENCE.md).
