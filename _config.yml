@@ -1,7 +1,7 @@
 title: Zhong Ruoyu
-tagline: Ruoyu’s personal site.
+tagline: My personal site.
 description: >-
-  Ruoyu’s personal site.
+  Welcome to my personal site. Glad to have you here.
 url: https://www.zhongruoyu.com
 baseurl: "" # the subpath of the site, e.g. /blog
 lang: en-SG
@@ -20,7 +20,7 @@ navigation_categories:
 
 hide_info: false
 hide_author: false
-hide_author_twitter: false
+hide_author_twitter: true
 hide_date: false
 hide_last_modified_at: false
 hide_tags: false
